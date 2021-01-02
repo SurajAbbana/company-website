@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Front Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        /* Header/logo Title */
+        
+        .header {
+            padding: 156px;
+            text-align: center;
+            background: #330066;
+            color: white;
+        }
+        /* Increase the font size of the heading */
+        
+        .header h1 {
+            font-size: 80px;
+            font-style: italic;
+        }
+        
+        .social-wrapper {
+            text-align: center;
+            background: #678185;
+            padding: 30px;
+        }
+        
+        .facebook-icon,
+        .instagram-icon {
+            margin-top: .625em;
+            width: 40px;
+            height: 40px;
+            opacity: 1;
+            filter: alpha(opacity=60);
+            /* For IE8 and earlier */
+            border-radius: 25px;
+        }
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        .tag {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 30px;
+        }
+        
+        button {
+            background-color: #f1eaf3;
+            color: rgb(8, 8, 8);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 15%;
+            font-size: 16px;
+        }
+        
+        .Start:hover {
+            opacity: 0.8;
+            background-color: #678185;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1><b>TAB-ALT</b></h1>
+        <p class="tag">Digitally Yours</p>
+        <button onclick="location.href='file:///C:/Users/suraj/Desktop/WEB/login.html'" type="submit" class="Start">Let's Start</button>
+    </div>
+    <div class="social-wrapper">
+        <a href="https://www.instagram.com/s_.u_.r_.a_.j_?r=nametag">
+            <img src="iinnssttaa.jpeg" class="instagram-icon"></a>
+
+
+        <a href="https://m.facebook.com/suraj.abbana?ref=bookmarks">
+            <img src="ffbb.jpeg" class="facebook-icon"></a>
+
+    </div>
+    <!-- #colophon -->
+
+</body>
+
+</html>

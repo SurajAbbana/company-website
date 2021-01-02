@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        /* Header/logo Title */
+        
+        .header {
+            padding: 50px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-style: italic;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+        /* Increase the font size of the heading */
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: static;
+            top: 0;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .tag {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 20pt;
+        }
+        
+        .header h1 {
+            font-size: 60px;
+        }
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 15px 40px;
+            text-decoration: none;
+        }
+        /* Right-aligned link */
+        /* Change color on hover */
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            text-shadow: 0 0 3px #1abc9c, 0 0 5px #1abc9c;
+        }
+        /* Active/current link */
+        
+        .navbar a.active {
+            background-color: #666;
+            color: white;
+            text-align: center;
+        }
+        /* Main column */
+        
+        .main {
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+            font-size: 15pt;
+            font-style: oblique;
+            background-color: #afaab1;
+            color: rgb(5, 5, 5);
+            text-shadow: 0 0 3px #71c2b2, 0 0 5px #89c0b5;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+        
+        .team td {
+            padding: 20px;
+        }
+        
+        .team p {
+            padding-left: 20px;
+        }
+        
+        .img {
+            width: 50%;
+            border-radius: 70%;
+        }
+        
+        .para {
+            padding-left: 400px;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 27pt;
+            text-shadow: 0 0 3px #71c2b2, 0 0 5px #89c0b5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><b>TAB-ALT</b></h1>
+        <p class="tag"><b>Digitally Yours</b></p>
+    </div>
+
+    <div class="navbar">
+        <a href="file:///C:/Users/suraj/Desktop/WEB/home.html" class="active">Home</a>
+        <a href="file:///C:/Users/suraj/Desktop/WEB/about.html">About</a>
+        <a href="file:///C:/Users/suraj/Desktop/WEB/images.html">Images</a>
+        <a href="file:///C:/Users/suraj/Desktop/WEB/works.html">Works</a>
+        <a href="file:///C:/Users/suraj/Desktop/WEB/jobapplication.html">Job Application</a>
+        <a href="file:///C:/Users/suraj/Desktop/WEB/services.html">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="main">
+        <h2>Origin:</h2>
+        <p></p>
+        <p><b>Sachin Kohli Sharma founded the company TAB-ALT in 2000 which is now <br/> the second largest Indian IT company after Tata consultancy.<br/>At the begining it was named as RYZ-TEL and later at the end of<br/>2005 it was renamed as TAB-ALT.Initially
+            this was started in the<br/>city Bangalore from Karnataka State.Now we have several<br/> branches all over the country.Office at Bangalore is made as the<br/> head quarters of TAB-ALT.</b></p><br/><br/><br/><br/>
+        <p class="para"><b>Vision: "To be a globally respected corporation that provides best-of<br/> breed business solutions, leveraging technology, delivered by best-in-class people."</b>
+        </p>
+        <br/><br/>
+        <p class="para"><b>Mission: "To achieve our objectives in an environment of fairness, honesty,<br/> and courtesy towards our clients, employees, vendors and society”.</b></p>
+    </div>
+    <h2><b>TEAM</b></h2>
+    <table class="team">
+        <tr>
+            <td><img src="icon.png" class="img">
+                <p><b>Suraj AD<br/>CEO of the Company</b></p>
+
+            </td>
+
+            <td><img src="icon2.jpeg" class="img">
+                <p><b>Sumukh V<br/>CEO of the Company</b></p>
+
+            </td>
+
+            <td><img src="icon.png" class="img">
+                <p><b>Thomas<br/>Managing Director</b></p>
+            </td>
+
+        </tr>-
+        <tr>
+            <td><img src="icon2.jpeg" class="img">
+                <p><b>Md Ali<br/>Finance Head</b></p>
+            </td>
+
+            <td><img src="icon.png" class="img">
+                <p><b>VB Rao<br/>Assistant Manager</b></p>
+            </td>
+
+            <td><img src="icon2.jpeg" class="img">
+                <p><b>Rahul Modi<br/>Supervising Head</b></p>
+            </td>
+
+        </tr>
+    </table>
+    <br>
+    </div>
+    <div class="footer">
+        <p>All rights reserved &#169</p>
+    </div>
+
+
+</body>
+
+</html>
